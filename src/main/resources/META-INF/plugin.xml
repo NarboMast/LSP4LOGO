@@ -11,5 +11,12 @@
     <extensions defaultExtensionNs="com.intellij">
         <toolWindow factoryClass="com.github.narbomast.lsp4logo.toolWindow.MyToolWindowFactory" id="MyToolWindow"/>
         <postStartupActivity implementation="com.github.narbomast.lsp4logo.startup.MyProjectActivity" />
+
+        <fileType
+                name="Logo File"
+                implementationClass="org.intellij.sdk.language.LogoFileType"
+                fieldName="INSTANCE"
+                language="Logo"
+                extensions="logo"/>
     </extensions>
 </idea-plugin>
